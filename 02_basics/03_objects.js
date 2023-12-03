@@ -1,38 +1,51 @@
-// singleton
-// Object.create
+// // singleton
+// // Object.create
 
-// object literals
+// // object literals
 
-const mySym = Symbol("key1")
+// const mySym = Symbol("key1")
 
 
-const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
-    age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
-    isLoggedIn: false,
-    lastLoginDays: ["Monday", "Saturday"]
+// const JsUser = {
+//     name: "Hitesh",
+//     "full name": "Hitesh Choudhary",
+//     [mySym]: "mykey1",
+//     age: 18,
+//     location: "Jaipur",
+//     email: "hitesh@google.com",
+//     isLoggedIn: false,
+//     lastLoginDays: ["Monday", "Saturday"]
+// }
+
+// // console.log(JsUser.email)
+// // console.log(JsUser["email"])
+// // console.log(JsUser["full name"])
+// // console.log(JsUser[mySym])
+
+// JsUser.email = "hitesh@chatgpt.com"
+// // Object.freeze(JsUser)
+// JsUser.email = "hitesh@microsoft.com"
+// // console.log(JsUser);
+
+// JsUser.greeting = function(){
+//     console.log("Hello JS user");
+// }
+// JsUser.greetingTwo = function(){
+//     console.log(`Hello JS user, ${this.name}`);
+// }
+
+// console.log(JsUser.greeting());
+// console.log(JsUser.greetingTwo());
+
+const sym = Symbol("Bhai bhia");
+let user = {
+    name : "Viraj",
+    surname : "Kulkarni",
+    [sym] : "Bro Code"
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
-
-JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
-// console.log(JsUser);
-
-JsUser.greeting = function(){
-    console.log("Hello JS user");
-}
-JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+user.greet = function(){
+    console.log("Heluu");
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(user.greet)
