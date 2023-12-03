@@ -55,24 +55,30 @@ const users = {
 //  console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 
-const course = {
-    coursename: "js in hindi",
-    price: "999",
-    courseInstructor: "hitesh"
+// const course = {
+//     coursename: "js in hindi",
+//     price: "999",
+//     courseInstructor: "hitesh"
+// }
+
+//  course.courseInstructor
+
+// const {courseInstructor: instructor} = course
+
+//  console.log(courseInstructor);
+//  console.log(instructor);
+
+const bhai = {
+    name : "Bhai",
+    price_of_book : 45,
+    age : 23,
+    sirname : "Bade Bhai"
 }
 
- course.courseInstructor
+// Destructor
+const {sirname:sr} = bhai;
+console.log(sr);
 
-const {courseInstructor: instructor} = course
-
-// // console.log(courseInstructor);
-// console.log(instructor);
-
-// // {
-// //     "name": "hitesh",
-// //     "coursename": "js in hindi",
-// //     "price": "free"
-// // }
 
 // [
 //     {},
